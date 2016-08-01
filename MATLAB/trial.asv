@@ -1,0 +1,8 @@
+load('\\Mac\Home\Desktop\patient_1\original_1.mat');
+load('\\Mac\Home\Desktop\patient_1\tumor_mask_1.mat');
+
+
+for i=1:36;
+    figure(i);imagesc(original_1(:,:,i));
+    figure(100+i);imagesc(tumor_mask_1(:,:,i));
+end
